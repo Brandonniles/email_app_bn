@@ -33,7 +33,7 @@ var gmailApp = {
 				attatchemt: true,
 				date: 'Mar 7'
 			}
-		]
+		],
 		important: [
 			{
 				from: 'Mint',
@@ -90,32 +90,40 @@ var gmailApp = {
 				lastMessage: '✉ Invitation sent'
 			}
 
-		],
+		]
 
 }
+};
 // code to address emailApp
 
+
 // get a list of inbox name
-for (var i = 0; i <= gmail.chatlist.contacts.length - 1; i++) {
-	console.log(gmail.chatlist.contacts[i].name);
-}
+// for (var i = 0; i <= gmailApp.chatList.contacts.length - 1; i++) {
+// 	console.log(gmailApp.chatList.contacts[i].name);
+// }
 
 //get a list of emails
-for (var i = 0; i <= gmailApp.mailboxes.inbox.primary.length - 1; i++) {
-	console.log(gmailApp.mailboxes.inbox.primary[i]);
-}
+// for (var i = 0; i <= gmailApp.mailboxes.starred.length - 1; i++) {
+// 	console.log(gmailApp.mailboxes.starred[i]);
+// }
 
 //get the text of the second email in the starred list
 console.log(gmailApp.mailboxes.starred[1].first15Characters);
 
 //mark an email as sent
-gmailApp.mailboxes.sentMail[0][sent] = true;
+gmailApp.mailboxes.sentMail[0]['sent'] = true;
+console.log(gmailApp.mailboxes.sentMail[0])
 
-//add a mailbox called drafts to the mailboxes
-gmailApp.mailboxes[drafts] = { 
-								to: 'Chad Johnson'
-								first15Characters: 'Hey Chad, sorry for the late'
-								date: 'Sept 29'
-								attatchment: false
 
-};
+
+
+
+
+
+
+
+
+
+
+
+
